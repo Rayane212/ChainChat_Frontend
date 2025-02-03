@@ -1,6 +1,7 @@
 import { ThemeProvider } from "@/provider/theme-provider"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import Auth from "./pages/Auth"
+import ForgetPassword from "./pages/ForgetPassword"
 
 function App() {
   return (
@@ -8,7 +9,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<div>Home</div>} />
-          <Route path="/forget-password" element={<div>forget</div>} />
+          <Route path="/forget-password" element={<ForgetPassword/>} />
           <Route path="/auth" element={<Auth/>} />
           <Route path="*" element={<div>404</div>} />
 
