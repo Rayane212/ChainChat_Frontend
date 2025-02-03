@@ -7,7 +7,11 @@ function App() {
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
       <Router>
         <Routes>
+          <Route path="/" element={<div>Home</div>} />
+          <Route path="/forget-password" element={<div>forget</div>} />
           <Route path="/auth" element={<Auth/>} />
+          <Route path="*" element={<div>404</div>} />
+
         </Routes>
       </Router>
     </ThemeProvider>

@@ -6,12 +6,14 @@ import { Button } from "@/components/ui/button"
 import {
   Form,
   FormControl,
+  FormDescription,
   FormField,
   FormItem,
   FormLabel,
   FormMessage,
 } from "@/components/ui/form"
 import { Input } from "@/components/ui/input"
+import { Link } from "react-router-dom"
 
 const loginSchema = z.object({
   email: z.string().email({ message: "Invalid email address" }),
@@ -67,6 +69,9 @@ export function LoginForm() {
               <FormControl>
                 <Input type="password" placeholder="********" {...field} />
               </FormControl>
+              <FormDescription>
+                <Link to={'/forget-password'}>Forget password ? </Link>
+              </FormDescription>
               <FormMessage />
             </FormItem>
           )}
