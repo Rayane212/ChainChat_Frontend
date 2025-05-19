@@ -106,3 +106,5 @@ const Chat = () => {
     </Card>
   )
 }
+
+export default Chat
