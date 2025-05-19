@@ -1,37 +1,48 @@
-import { Separator } from "@/components/ui/separator";
-import { Home, Search, Bell, User } from "lucide-react";
+import { ModeToggle } from "@/components/mode-toggle"
+import { Button } from "@/components/ui/button"
+import { Home, Search, Bell, User, LogOut } from "lucide-react"
+import { useContext } from "react"
+import { AuthContext } from "@/provider/AuthContext"
+import { useNavigate } from "react-router-dom"
 
 export function Navigation() {
+  const auth = useContext(AuthContext)
+  const navigate = useNavigate()
+
+  if (!auth) throw new Error("AuthContext must be used within an AuthProvider")
+
+  const handleLogout = async () => {
+    await auth.logout()
+    navigate("/auth")
+  }
+
   return (
-    <nav className="fixed bottom-0 left-0 right-0 border-t">
-      <div className="flex items-center justify-between px-4 py-2">
-        <div className="flex flex-col items-center">
-          <Home className="w-6 h-6 text-gray-700" />
-          <span className="text-xs mt-1 text-gray-600">Accueil</span>
-        </div>
+    <nav className="fixed bottom-0 left-0 right-0 border-t bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+      <div className="container mx-auto px-4">
+        <div className="flex items-center justify-between h-16">
+          <Button variant="ghost" size="icon">
+            <Home className="h-5 w-5" />
+          </Button>
+          
+          <Button variant="ghost" size="icon">
+            <Search className="h-5 w-5" />
+          </Button>
+          
+          <Button variant="ghost" size="icon">
+            <Bell className="h-5 w-5" />
+          </Button>
+          
+          <Button variant="ghost" size="icon">
+            <User className="h-5 w-5" />
+          </Button>
 
-        <Separator orientation="vertical" className="h-8" />
-
-        <div className="flex flex-col items-center">
-          <Search className="w-6 h-6 text-gray-700" />
-          <span className="text-xs mt-1 text-gray-600">Recherche</span>
-        </div>
-
-        <Separator orientation="vertical" className="h-8" />
-
-        <div className="flex flex-col items-center">
-          <Bell className="w-6 h-6 text-gray-700" />
-          <span className="text-xs mt-1 text-gray-600">Notifications</span>
-        </div>
-
-        <Separator orientation="vertical" className="h-8" />
-
-        <div className="flex flex-col items-center">
-          <User className="w-6 h-6 text-gray-700" />
-          <span className="text-xs mt-1 text-gray-600">Profil</span>
+          <ModeToggle />
+          
+          <Button variant="ghost" size="icon" onClick={handleLogout}>
+            <LogOut className="h-5 w-5" />
+          </Button>
         </div>
       </div>
     </nav>
-  );
-};
-
+  )
+}
