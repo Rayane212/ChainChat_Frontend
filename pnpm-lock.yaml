@@ -9,22 +9,22 @@ dependencies:
     specifier: ^3.10.0
     version: 3.10.0(react-hook-form@7.56.4)
   '@radix-ui/react-avatar':
-    specifier: ^1.1.2
+    specifier: ^1.1.9
     version: 1.1.9(@types/react-dom@18.3.7)(@types/react@18.3.21)(react-dom@18.3.1)(react@18.3.1)
   '@radix-ui/react-dropdown-menu':
-    specifier: ^2.1.4
+    specifier: ^2.1.14
     version: 2.1.14(@types/react-dom@18.3.7)(@types/react@18.3.21)(react-dom@18.3.1)(react@18.3.1)
   '@radix-ui/react-label':
-    specifier: ^2.1.1
+    specifier: ^2.1.6
     version: 2.1.6(@types/react-dom@18.3.7)(@types/react@18.3.21)(react-dom@18.3.1)(react@18.3.1)
   '@radix-ui/react-separator':
-    specifier: ^1.1.2
+    specifier: ^1.1.6
     version: 1.1.6(@types/react-dom@18.3.7)(@types/react@18.3.21)(react-dom@18.3.1)(react@18.3.1)
   '@radix-ui/react-slot':
-    specifier: ^1.1.1
+    specifier: ^1.2.2
     version: 1.2.2(@types/react@18.3.21)(react@18.3.1)
   '@radix-ui/react-tabs':
-    specifier: ^1.1.2
+    specifier: ^1.1.11
     version: 1.1.11(@types/react-dom@18.3.7)(@types/react@18.3.21)(react-dom@18.3.1)(react@18.3.1)
   class-variance-authority:
     specifier: ^0.7.1
@@ -33,7 +33,7 @@ dependencies:
     specifier: ^2.1.1
     version: 2.1.1
   lucide-react:
-    specifier: ^0.471.1
+    specifier: ^0.471.2
     version: 0.471.2(react@18.3.1)
   react:
     specifier: ^18.3.1
@@ -42,10 +42,10 @@ dependencies:
     specifier: ^18.3.1
     version: 18.3.1(react@18.3.1)
   react-hook-form:
-    specifier: ^7.54.2
+    specifier: ^7.56.4
     version: 7.56.4(react@18.3.1)
   react-router-dom:
-    specifier: ^7.1.2
+    specifier: ^7.6.0
     version: 7.6.0(react-dom@18.3.1)(react@18.3.1)
   tailwind-merge:
     specifier: ^2.6.0
@@ -54,54 +54,54 @@ dependencies:
     specifier: ^1.0.7
     version: 1.0.7(tailwindcss@3.4.17)
   zod:
-    specifier: ^3.24.1
+    specifier: ^3.24.4
     version: 3.24.4
 
 devDependencies:
   '@eslint/js':
-    specifier: ^9.17.0
+    specifier: ^9.27.0
     version: 9.27.0
   '@types/node':
-    specifier: ^22.10.6
+    specifier: ^22.15.19
     version: 22.15.19
   '@types/react':
-    specifier: ^18.3.18
+    specifier: ^18.3.21
     version: 18.3.21
   '@types/react-dom':
-    specifier: ^18.3.5
+    specifier: ^18.3.7
     version: 18.3.7(@types/react@18.3.21)
   '@vitejs/plugin-react':
-    specifier: ^4.3.4
+    specifier: ^4.4.1
     version: 4.4.1(vite@6.3.5)
   autoprefixer:
-    specifier: ^10.4.20
+    specifier: ^10.4.21
     version: 10.4.21(postcss@8.5.3)
   eslint:
-    specifier: ^9.17.0
+    specifier: ^9.27.0
     version: 9.27.0
   eslint-plugin-react-hooks:
-    specifier: ^5.0.0
+    specifier: ^5.2.0
     version: 5.2.0(eslint@9.27.0)
   eslint-plugin-react-refresh:
-    specifier: ^0.4.16
+    specifier: ^0.4.20
     version: 0.4.20(eslint@9.27.0)
   globals:
-    specifier: ^15.14.0
+    specifier: ^15.15.0
     version: 15.15.0
   postcss:
-    specifier: ^8.5.1
+    specifier: ^8.5.3
     version: 8.5.3
   tailwindcss:
     specifier: ^3.4.17
     version: 3.4.17
   typescript:
-    specifier: ~5.6.2
+    specifier: ~5.6.3
     version: 5.6.3
   typescript-eslint:
-    specifier: ^8.18.2
+    specifier: ^8.32.1
     version: 8.32.1(eslint@9.27.0)(typescript@5.6.3)
   vite:
-    specifier: ^6.0.5
+    specifier: ^6.3.5
     version: 6.3.5(@types/node@22.15.19)
 
 packages:
